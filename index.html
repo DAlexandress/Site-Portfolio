@@ -4,6 +4,7 @@
     <head>
       <title>Douglas Alexandre</title>
       <link rel="stylesheet" href="style.css" />
+      <script src="index.js"></script>
     </head>
   </head>
   <body>
@@ -13,11 +14,25 @@
           <div class="barra-navegacao">
             <h2 class="titulo-navegacao">DAlexandre</h2>
             <div>
-              <a class="links-navegacao">Habilidade</a>
-              <a class="links-navegacao">Portifólio</a>
-              <a class="links-navegacao">Experiência</a>
+              <a
+                onclick="onClickScrollTo('section-abilities')"
+                class="links-navegacao"
+                >Habilidade</a
+              >
+              <a
+                onclick="onClickScrollTo('section-portifolio')"
+                class="links-navegacao"
+                >Portifólio</a
+              >
+              <a
+                onclick="onClickScrollTo('section-experiences')"
+                class="links-navegacao"
+                >Experiência</a
+              >
             </div>
-            <button>CONTATO</button>
+            <button onclick="onClickScrollTo('section-contact')">
+              CONTATO
+            </button>
           </div>
 
           <div class="hero-info">
@@ -38,7 +53,9 @@
                 Gosto de criar interfaces envolventes e estou sempre me
                 atualizando nas últimas tecnologias.
               </p>
-              <button>ENTRAR EM CONTATO</button>
+              <button onclick="onClickScrollTo('section-contact')">
+                ENTRAR EM CONTATO
+              </button>
               <div class="hero-info-icons-container">
                 <a>
                   <img
@@ -65,7 +82,7 @@
             </div>
           </div>
         </section>
-        <section class="section-abilities">
+        <section class="section-abilities" id="section-abilities">
           <h3>Habilidades que</h3>
           <h3 class="gold">domino.</h3>
           <div class="ability-card-container">
@@ -145,7 +162,7 @@
             </div>
           </div>
         </section>
-        <section class="section-portifolio">
+        <section class="section-portifolio" id="section-portifolio">
           <h3>Portifólio</h3>
           <h3 class="gold">de Projetos.</h3>
           <div class="section-portifolio-grid">
@@ -232,7 +249,7 @@
             </div>
           </div>
         </section>
-        <section class="section-experiences">
+        <section class="section-experiences" id="section-experiences">
           <h3>Experiências</h3>
           <h3 class="gold">profissionais.</h3>
           <div class="section-experiences-card">
@@ -274,7 +291,7 @@
             </div>
           </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
           <h3>Conecte-se</h3>
           <h3 class="gold">comigo!.</h3>
           <p>Estou à diposição para ajudar o seu projeto ou sua empresa.</p>
