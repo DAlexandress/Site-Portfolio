@@ -15,6 +15,9 @@ h1 {
 p {
   color: azure;
 }
+a {
+  color: azure;
+}
 
 p.card {
   font-size: 16px;
@@ -159,8 +162,8 @@ button {
   display: inline-grid;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 430px;
-  width: 430px;
+  height: 435px;
+  width: 435px;
   border-radius: 290px;
   border-color: goldenrod;
   border-style: outset;
@@ -195,6 +198,7 @@ button {
   width: 100vw;
   padding-top: 64px;
   padding-bottom: 64px;
+  margin-top: 20px;
 }
 
 .ability-card-container {
