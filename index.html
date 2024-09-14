@@ -4,6 +4,7 @@
     <head>
       <title>Douglas Alexandre</title>
       <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="mobile.css" />
       <script src="index.js"></script>
     </head>
   </head>
@@ -43,9 +44,10 @@
                 alt="Perfil DAlexandre"
               />
             </div>
-            <div>
+            <div class="mobile-info-text-container">
               <h1 class="hero-info-title">
-                Ei, Bem-Vindo! <br />Sou Douglas Alexandre.
+                Ei, Bem-Vindo! <br />
+                Sou Douglas Alexandre.
               </h1>
               <p class="hero-info-subtitle">
                 Desenvolvedor front-end desde 2023. Tenho experiência com HTML,
@@ -53,7 +55,12 @@
                 Gosto de criar interfaces envolventes e estou sempre me
                 atualizando nas últimas tecnologias.
               </p>
-              <button onClick="redirectToWhatsApp()">ENTRAR EM CONTATO</button>
+              <button
+                class="mobile-styling-button"
+                onClick="redirectToWhatsApp()"
+              >
+                ENTRAR EM CONTATO
+              </button>
               <div class="hero-info-icons-container">
                 <a onclick="onClickLink('https://github.com/DAlexandress')">
                   <img
