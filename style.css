@@ -23,7 +23,7 @@ p.card {
   font-size: 16px;
   margin-top: 8px;
   text-align: center;
-  width: 80%;
+  max-width: 80%;
   color: azure;
 }
 
@@ -183,6 +183,7 @@ button {
   justify-content: space-between;
   border-radius: 50%;
   padding-left: 20%;
+  margin-top: 4%;
 }
 
 .hero-size-icons-img {
@@ -192,17 +193,6 @@ button {
   cursor: pointer;
   object-fit: contain;
   border-radius: 70%;
-}
-
-.section-abilities {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  margin-top: 20px;
 }
 
 .ability-card-container {
@@ -255,6 +245,16 @@ button {
 .ability-list {
   width: 70%;
   color: azure;
+}
+.section-abilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-top: 20px;
 }
 
 .section-portifolio {
