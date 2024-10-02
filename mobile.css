@@ -3,6 +3,7 @@
     font-size: 34px;
     white-space: nowrap;
   }
+
   p.card {
     font-size: 127%;
   }
@@ -138,6 +139,41 @@
     width: 44px;
     right: 44px;
   }
+  .section-contact-item-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .section-experiences-card {
+    width: 95%;
+  }
+
+  .section-experiences-card-text-container {
+    width: auto;
+    max-width: 100%;
+  }
+  .section-experiences-card-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    width: 100%;
+    margin: 0;
+  }
+  .section-experiences-card-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    white-space: nowrap;
+  }
+  .section-experiences-card-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  p.mobileCP {
+    font-size: 26px;
+  }
+  a.mobileCA {
+    font-size: 23px;
+  }
+
   .footer-content {
     width: 97vw;
   }
