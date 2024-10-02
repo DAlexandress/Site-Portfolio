@@ -16,3 +16,19 @@ This is my study project to present my skills with HTML, CSS and JavaScript cons
 ## Instructions to run:
 
 1. Clone the project:
+
+```
+git clone https://github.com/DAlexandress/Site-Portfolio.git
+```
+
+2. After clone open the folder:
+
+```
+site-portfolio
+```
+
+3. Open the index file with the browser:
+
+```
+index.html
+```
