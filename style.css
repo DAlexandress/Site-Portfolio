@@ -1,22 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(1000deg, #473b02, #0f0e00);
+  background: linear-gradient(1000deg, #026583, #000607);
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
 }
+
+h2 {
+  font-weight: 500;
+  margin: 8px;
+}
+
 p {
-  color: azure;
+  color: rgb(0, 8, 8);
 }
 a {
-  color: azure;
+  color: rgb(2, 95, 99);
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p.slogan {
+  font-size: 22px;
+  font-family: "Condiment", cursive;
+  font-weight: 400;
 }
 
 p.card {
@@ -27,13 +45,21 @@ p.card {
   color: azure;
 }
 
+p.front {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: end;
+  margin: 0;
+}
+
 footer {
   display: flex;
-  width: 100vw;
-  height: 156px;
-  background-color: #2f4f4f;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 h3 {
@@ -82,72 +108,85 @@ button {
 .root-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1800px;
+  max-height: 1800px;
 }
 
 .content-container {
   display: flex;
-  flex-direction: column;
-  width: 1216px;
+  flex-direction: row;
+  width: 100%;
+  height: 140px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  background-color: #ffffff;
 }
 
-.section-hero {
+/* .section-hero {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 50%;
+  height: auto;
   margin-bottom: 20%;
-}
+} */
 
 .barra-navegacao {
   display: flex;
-  width: 1216px;
+  width: 95%;
   height: 72px;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .titulo-navegacao {
-  color: azure;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+  color: rgb(0, 0, 0);
   font-size: 30px;
-  letter-spacing: -0.015rem;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-right: 20%;
-  margin-top: 0px;
+  font-weight: 500;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  gap: 18px;
+}
+
+.hero-navigation {
+  display: flex;
+  width: 300px;
+  height: auto;
 }
 
 .links-navegacao {
-  color: azure;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
   letter-spacing: -0.015rem;
-  margin-right: 18px;
   cursor: pointer;
 }
 
 .hero-info {
-  width: 1216px;
+  width: 100%;
   height: 594px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 64px;
+  padding-top: 24px;
+  padding-left: 6%;
 }
 
 .hero-info-title {
-  font-size: 48px;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   margin: 0px;
   color: azure;
-  padding-left: 20%;
 }
 
 .hero-info-subtitle {
@@ -159,19 +198,91 @@ button {
   padding-left: 20%;
 }
 
+.hero-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 243, 227);
+  height: auto;
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: #038eb8 0px 0px 10px 2px;
+  margin-left: 20%;
+}
+
+.hero-feed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.feed-post {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1000;
+}
+.feed-post.active {
+  display: flex;
+}
+
+.feed-post-content {
+  background: rgb(24, 21, 0);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: slideLeft 1.3s ease;
+  margin-left: 30%;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.init-feed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-feed-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-feed-item span {
+  font-size: 14px;
+  color: #848b8b;
+}
+
 .hero-info-image {
   display: block;
-  height: 435px;
-  width: 435px;
-  border-radius: 50%;
-  border: 5px outset goldenrod;
-  background-image: url("Perfil.png");
-  background-size: cover; /* Garante que o plano de fundo cubra o contêiner */
-  background-position: center; /* Centraliza a imagem no círculo */
-  background: linear-gradient(white, white) padding-box,
-    radial-gradient(circle, #ffd700cc, transparent) border-box; /* Gradiente estilo LED dourado com hexadecimal */
-  box-shadow: 0 0 15px 5px #ffd70099, 0 0 30px 10px #ffd70066,
-    0 0 45px 15px #ffd70033;
+  height: 300px;
+  width: 250px;
+  border-radius: 8%;
+  background-image: url("Perfil2.png");
 }
 
 .hero-info-icons-container {
@@ -187,12 +298,331 @@ button {
 }
 
 .hero-size-icons-img {
-  width: 35px;
-  height: 35px;
-  margin-top: 30%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  object-fit: contain;
+  padding-top: 8px;
+}
+
+.hero-size-icons-feed {
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   object-fit: contain;
   border-radius: 70%;
+}
+
+.hero-size-icons-sigla {
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+  background-image: url("sigla.png");
+  margin-left: 5px;
+  animation: siglaBounce 0.8s ease-out;
+}
+
+@keyframes siglaBounce {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateY(-20px);
+  }
+
+  70% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  90% {
+    transform: translateY(0);
+  }
+
+  95% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+#boh-container {
+  position: fixed;
+  left: 50%;
+  bottom: 20%;
+  animation: bohEntrada 1.4s ease-out forwards;
+  z-index: 2000;
+}
+
+/* ROBÔ ============================= */
+#boh {
+  width: 150px;
+  animation: bohFlutuar 3s ease-in-out infinite;
+}
+
+/* HOLOGRAMA ========================= */
+.boh-holo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -50%;
+  bottom: 180px;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  animation: bohHoloAparecer 1.2s ease-out forwards;
+  animation-delay: 1.6s; /* só aparece quando Boh para */
+}
+
+/* Feixe do holograma */
+.boh-holo-feixe {
+  width: 6px;
+  height: 60px;
+  background: linear-gradient(to top, rgba(132, 214, 236, 0.932), transparent);
+  margin: 0 auto;
+  filter: blur(0px);
+}
+
+/* Caixa holográfica */
+.boh-holo-text {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 160, 220, 0.15);
+  border: 1px solid rgba(0, 200, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.4);
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 20px;
+  color: #dff8ff;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  animation: bohTextoFlutuar 3s ease-in-out infinite;
+}
+/* ANIMAÇÕES ========================= */
+
+/* Robô entrando */
+@keyframes bohEntrada {
+  0% {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120px);
+  }
+}
+
+/* Robô flutuando */
+@keyframes bohFlutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Holograma aparecendo */
+@keyframes bohHoloAparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Texto flutuando levemente */
+@keyframes bohTextoFlutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Quando o BOH vai sumir */
+#boh-container.boh-hide {
+  animation: bohAccelerate 0.5s cubic-bezier(0.3, 0, 1, 1) forwards;
+}
+
+/* Animação completa */
+@keyframes bohAccelerate {
+  0% {
+    transform: translate(0) rotate(-1deg) scale(1);
+    opacity: 8;
+    filter: blur(0px);
+  }
+
+  /* Começando a acelerar */
+  60% {
+    transform: translate(-180px) rotate(10deg) scale(1.07);
+    filter: blur(1px);
+  }
+
+  /* Indo em direção ao botão + (canto inferior direito) */
+  100% {
+    transform: translateX(-650px) rotate(0deg) scale(1.1);
+    opacity: 0;
+    filter: blur(6px);
+  }
+}
+
+/* Holograma desaparecendo suavemente */
+#boh-holograma.boh-hide {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Pó cósmico */
+#boh-container.boh-hide::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: -100px;
+  bottom: 0px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9),
+    rgba(105, 20, 190, 0.3),
+    rgba(100, 50, 200, 0)
+  );
+
+  opacity: 0;
+  pointer-events: none;
+  animation: cosmicDust 1s ease-out forwards;
+  filter: blur(0px);
+}
+
+/* Animação da poeira */
+@keyframes cosmicDust {
+  0% {
+    opacity: 0.8;
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-80px, -20px) scale(1.8);
+  }
+}
+
+.feed-bios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  gap: 30%;
+}
+
+.feed-bios .nav-feed {
+  position: relative;
+  display: inline-block;
+}
+
+.feed-bios .nav-feed::after {
+  content: ""; /* Cria o pseudo-elemento */
+  position: absolute;
+  width: 100%; /* Começa com largura zero */
+  height: 2px; /* Espessura do sublinhado */
+  background-color: rgb(245, 242, 242);
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.6s ease;
+}
+.feed-bios .nav-feed:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  width: 10rem;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 10%;
+}
+
+.highlight {
+  cursor: pointer;
+  text-align: center;
+}
+.highlight img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #0084ff;
+  padding: 3px;
+}
+.highlight p {
+  color: rgb(245, 242, 242);
+  text-align: center;
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.story-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.story-content {
+  position: relative;
+  z-index: 10000;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.story-media {
+  width: 100%;
+  max-height: 80vh;
+  border-radius: 15px;
+  display: none;
+}
+
+.story-link {
+  display: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff8a00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .ability-card-container {
@@ -403,10 +833,12 @@ button {
 .footer-content {
   display: flex;
   flex-direction: row;
-  width: 1216px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 66px;
+  text-align: center;
 }
 
 .footer-social-icons-container {
@@ -414,5 +846,45 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
+  gap: 30px;
+  margin-top: 14px;
+}
+
+.hero-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  text-align: start;
+}
+
+.content-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-midia {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 100px;
+  font-size: 14px;
+}
+
+.line {
+  width: 80%;
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 20px auto;
 }
