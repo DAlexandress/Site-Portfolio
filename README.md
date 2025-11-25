@@ -1,10 +1,10 @@
 # Introduction
 
-This is my study project to present my skills with HTML, CSS and JavaScript considering my main professional information.
+This is my study project to present my skills with HTML, CSS, and JavaScript, considering my main professional information.
 
 ## Preview
 
-<img src="https://github.com/DAlexandress/Site-Portfolio/blob/master/preview.png" heigth="500" />
+<video src="https://github.com/DAlexandress/Site-Portfolio/blob/master/preview.mp4" heigth="500" />
 
 ## Live link
 
@@ -25,7 +25,7 @@ https://dalexandress.github.io/Site-Portfolio/
 git clone https://github.com/DAlexandress/Site-Portfolio.git
 ```
 
-2. After clone open the folder:
+2. After cloning, open the folder:
 
 ```
 site-portfolio
