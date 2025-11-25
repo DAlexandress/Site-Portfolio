@@ -4,7 +4,7 @@ This is my study project to present my skills with HTML, CSS, and JavaScript, co
 
 ## Preview
 
-<video src="https://github.com/DAlexandress/Site-Portfolio/blob/master/preview.mp4" heigth="500" />
+<video src="https://github.com/DAlexandress/Site-Portfolio/raw/master/preview.mp4" height="500" controls></video>
 
 ## Live link
 
