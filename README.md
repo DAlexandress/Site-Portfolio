@@ -4,7 +4,7 @@ This is my study project to present my skills with HTML, CSS and JavaScript cons
 
 ## Preview
 
-<img src="https://github.com/DAlexandress/Site-Portfolio/blob/master/preview.png" heigth="500" />
+<video src="https://github.com/DAlexandress/Site-Portfolio/raw/master/preview.mp4" height="500" controls></video>
 
 ## Live link
 
