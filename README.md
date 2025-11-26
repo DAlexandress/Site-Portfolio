@@ -4,7 +4,7 @@ This is my study project to present my skills with HTML, CSS and JavaScript cons
 
 ## Preview
 
-[![Preview do Projeto](./assets/images/preview.png)](./assets/videos/preview.mp4)
+![Preview do Projeto](./assets/gif/preview.gif)
 
 ## Live link
 
