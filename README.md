@@ -4,7 +4,7 @@ This is my study project to present my skills with HTML, CSS and JavaScript cons
 
 ## Preview
 
-[![Preview do Projeto](https://github.com/DAlexandress/Site-Portfolio/blob/ajustes-portfolio/preview.png?raw=true)] (https://github.com/DAlexandress/Site-Portfolio/raw/refs/heads/ajustes-portfolio/preview.mp4)
+[![Preview do Projeto](./assets/images/preview.png)](./assets/videos/preview.mp4)
 
 ## Live link
 
