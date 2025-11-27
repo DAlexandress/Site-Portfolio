@@ -431,7 +431,7 @@ button {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0);
@@ -442,11 +442,11 @@ button {
 @keyframes bohHoloAparecer {
   0% {
     opacity: 0;
-    transform: translateY(20px) scale(0.95);
+    transform: translateY(20px) scale(0.9);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateX(-150px) scale(1);
   }
 }
 
@@ -465,35 +465,36 @@ button {
 
 /* Quando o BOH vai sumir */
 #boh-container.boh-hide {
-  animation: bohAccelerate 0.5s cubic-bezier(0.3, 0, 1, 1) forwards;
+  animation: bohAccelerate 0.4s cubic-bezier(0.3, 0, 1, 1) forwards;
 }
 
 /* Animação completa */
 @keyframes bohAccelerate {
   0% {
     transform: translate(0) rotate(-1deg) scale(1);
-    opacity: 8;
+    opacity: 25;
     filter: blur(0px);
   }
 
   /* Começando a acelerar */
   60% {
-    transform: translate(-180px) rotate(10deg) scale(1.07);
-    filter: blur(1px);
+    transform: translate(-290px) rotate(1deg) scale(1.07);
+    opacity: 12;
+    filter: blur(0px);
   }
 
   /* Indo em direção ao botão + (canto inferior direito) */
   100% {
-    transform: translateX(-650px) rotate(0deg) scale(1.1);
+    transform: translateX(-650px) rotate(20deg) scale(1.1);
     opacity: 0;
     filter: blur(6px);
   }
 }
 
 /* Holograma desaparecendo suavemente */
-#boh-holograma.boh-hide {
+.boh-holo.boh-hide {
   opacity: 0;
-  transition: opacity 0.4s ease;
+  animation: none;
 }
 
 /* Pó cósmico */

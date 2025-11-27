@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   feedPost.addEventListener("click", (e) => {
     if (e.target === feedPost) {
       feedPost.classList.remove("active");
+      boh.classList.remove("boh-hide");
+      bohHolo.classList.remove("boh-hide");
     }
   });
 });
