@@ -14,20 +14,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/layout.css" />
+  <link rel="stylesheet" href="/CSS/action.css" />
+  <link rel="stylesheet" href="/CSS/mobile.css" />
+
+
 
 </head>
 
 <body>
 
-  <div class="root-container">
+  <div class=" root-container">
 
     <!-- -------------- HEADER SECTION ---------------- -->
     <header class="content-container">
 
       <div class="hero-size-icons-sigla">
-        <img class="hero-size-icons-sigla" src="sigla.png" alt="Logo Name" />
+        <img class="hero-size-icons-sigla" src="/assets/images/sigla.png" alt="Logo Name" />
       </div>
 
       <div class="header-container">
@@ -51,14 +55,14 @@
 
         <div class="hero-profile">
 
-          <img class="hero-info-image" src="perfil3.png" alt="Perfil DAlexandre" />
+          <img class="hero-info-image" src="/assets/images/perfil3.png" alt="Perfil DAlexandre" />
 
           <div class="hero-feed">
 
             <div class="hero-feed-item">
 
               <a>
-                <img alt="like" class="hero-size-icons-img" src="icons/heartThin.png" />
+                <img alt="like" class="hero-size-icons-img" src="/assets/icons/heartThin.png" />
               </a>
 
               <span>Amei</span>
@@ -68,7 +72,7 @@
             <div class="hero-feed-item">
 
               <a>
-                <img alt="Comment" class="hero-size-icons-img" src="icons/comment.png" />
+                <img alt="Comment" class="hero-size-icons-img" src="/assets/icons/comment.png" />
               </a>
 
               <span>Comentar</span>
@@ -78,7 +82,7 @@
             <div class="hero-feed-item">
 
               <a id="btn-mais">
-                <img alt="Menu" class="hero-size-icons-img" src="icons/menu.png" />
+                <img alt="Menu" class="hero-size-icons-img" src="/assets/icons/menu.png" />
               </a>
 
               <span>Mais</span>
@@ -99,14 +103,14 @@
             <div class="init-feed">
 
               <a>
-                <img alt="Back" class="hero-size-icons-feed" src="icons/back.png" />
+                <img alt="Back" class="hero-size-icons-feed" src="assets/icons/back.png" />
               </a>
 
               <h1 class="hero-info-title">
                 dalexan_dress@outlook.com</h1>
 
               <a>
-                <img alt="Reticen" class="hero-size-icons-feed" src="icons/reticen.png" />
+                <img alt="Reticen" class="hero-size-icons-feed" src="/assets/icons/reticen.png" />
               </a>
 
             </div>
@@ -118,21 +122,21 @@
 
               <div class="highlight" onclick="openStory(0)">
 
-                <img alt="Story1" src="logo.png" />
+                <img alt="Story1" src="/assets/images/logo.png" />
                 <p>Lenhero</p>
 
               </div>
 
               <div class="highlight" onclick="openStory(1)">
 
-                <img alt="Story2" src="Wallat.jpg" />
+                <img alt="Story2" src="assets/images/Wallat.jpg" />
                 <p>WalletApp</p>
 
               </div>
 
               <div class="highlight" onclick="openStory(2)">
 
-                <img alt="Story3" src="MarkList.png" />
+                <img alt="Story3" src="assets/images/MarkList.png" />
                 <p>MarkList</p>
 
               </div>
@@ -157,15 +161,15 @@
             <div class="feed-bios">
 
               <a class="nav-feed">
-                <img alt="Profile" class="hero-size-icons-img" src="/icons/profile.png" />
+                <img alt="Profile" class="hero-size-icons-img" src="assets/icons/profile.png" />
               </a>
 
               <a class="nav-feed">
-                <img alt="Skill" class="hero-size-icons-img" src="/icons/skill.png" />
+                <img alt="Skill" class="hero-size-icons-img" src="assets/icons/skill.png" />
               </a>
 
               <a class="nav-feed">
-                <img alt="Config" class="hero-size-icons-img" src="/icons/config.png" />
+                <img alt="Config" class="hero-size-icons-img" src="assets/icons/config.png" />
               </a>
 
             </div>
@@ -205,19 +209,7 @@
     </div>
 
 
-    <!-- <section class="section-abilities" id="section-abilities">
-          <h3>Habilidades que</h3>
-          <h3 class="gold">domino.</h3>
-          <div class="ability-card-container">
-            <div class="ability-card">
-              <div class="ability-card-icon-container">
-                <img
-                  class="ability-card-icon-img"
-                  src="icons/habilidades-gerais.png"
-                  alt="Habilidade Gerais"
-                />
-              </div>
-              <h5>Habilidades Gerais</h5>
+    <!-- <section class="section-abilities" 
               <p class="card">
                 Tecnologias que utilizo no dia a dia da programação.
               </p>
@@ -230,15 +222,6 @@
                 <li>Insomnia</li>
               </ul>
             </div>
-            <div class="ability-card">
-              <div class="ability-card-icon-container">
-                <img
-                  class="ability-card-icon-img"
-                  src="icons/Front-End.png"
-                  alt="Front-End"
-                />
-              </div>
-              <h5>Front-End</h5>
               <p class="card">
                 Ferramentas utilizadas para criação de sistemas web.
               </p>
@@ -255,16 +238,6 @@
                 <li>Atomic Design</li>
                 <li>React Router</li>
               </ul>
-            </div>
-            <div class="ability-card">
-              <div class="ability-card-icon-container">
-                <img
-                  class="ability-card-icon-img"
-                  src="icons/back-end.png"
-                  alt="back-end"
-                />
-              </div>
-              <h5>Back-End</h5>
               <p class="card">
                 Controle de banco de dados e controle na nuvem.
               </p>
@@ -285,165 +258,8 @@
             </div>
           </div>
         </section>
-        <section class="section-portifolio" id="section-portifolio">
-          <h3>Portifólio</h3>
-          <h3 class="gold">de Projetos.</h3>
-          <div class="section-portifolio-grid">
-            <div class="section-portifolio-card">
-              <img
-                class="section-portifolio-img"
-                src="projetos/Projeto1.png"
-                alt="Projeto Supermercado"
-              />
-              <h5>Supermarket List</h5>
-              <p class="card">
-                Aplicação em React.js e <br />Express + MongoDB.
-              </p>
-              <div class="section-portifolio-card-link">
-                <a>
-                  <img
-                    class="section-portifolio-card-icon-image"
-                    src="icons/link.png"
-                    alt="Link Projeto"
-                  />
-                </a>
-                <a>
-                  <img
-                    class="section-portifolio-card-icon-image"
-                    src="icons/gitHUb.png"
-                    alt="GitHub do Projeto"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="section-portifolio-card">
-              <img
-                class="section-portifolio-img"
-                src="projetos/Projeto2.png"
-                alt="Projetos Booklist"
-              />
-              <h5>BookClube</h5>
-              <p class="card">
-                Aplicação em React.js e <br />Express + Sequelize e AWS.
-              </p>
-              <div class="section-portifolio-card-link">
-                <a>
-                  <img
-                    class="section-portifolio-card-icon-image"
-                    src="icons/link.png"
-                    alt="Link Projeto"
-                  />
-                </a>
-                <a>
-                  <img
-                    class="section-portifolio-card-icon-image"
-                    src="icons/gitHUb.png"
-                    alt="GitHub do Projeto"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="section-portifolio-card">
-              <img
-                class="section-portifolio-img"
-                src="projetos/Projeto3.jpeg"
-                alt="Projetos FastFood"
-              />
-              <h5>FastFoodMy</h5>
-              <p class="card">
-                Aplicação em React.js e <br />Express + MongoDB.
-              </p>
-              <div class="section-portifolio-card-link">
-                <a>
-                  <img
-                    class="section-portifolio-card-icon-image"
-                    src="icons/link.png"
-                    alt="Link Projeto"
-                  />
-                </a>
-                <a>
-                  <img
-                    class="section-portifolio-card-icon-image"
-                    src="icons/gitHUb.png"
-                    alt="GitHub do Projeto"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-experiences" id="section-experiences">
-          <h3>Experiências</h3>
-          <h3 class="gold">profissionais.</h3>
-          <div class="section-experiences-card">
-            <img
-              class="section-experiences-card-img"
-              src="Company/company1.png"
-            />
-            <div class="section-experiences-card-text-container">
-              <h6 class="section-experiences-card-title">
-                Front-End Developer
-              </h6>
-              <p class="section-experiences-card-subtitle">
-                SevenApps - Agosto de 2018 até o momento
-              </p>
-              <p class="section-experiences-card-text">
-                Desenvolvedor web responsável por criar aplicações de larga
-                escala para os clientes utilizando principalmente a tecnogia
-                React.js.
-              </p>
-            </div>
-          </div>
-          <div class="section-experiences-card">
-            <img
-              class="section-experiences-card-img"
-              src="Company/company2.png"
-            />
-            <div class="section-experiences-card-text-container">
-              <h6 class="section-experiences-card-title">
-                Freelancer - Desenvolvedor FullStack
-              </h6>
-              <p class="section-experiences-card-subtitle">
-                BestBarbers - Agosto de 2018 até o momento
-              </p>
-              <p class="section-experiences-card-text">
-                Desenvolvedor web responsável por criar aplicações de larga
-                escala para os clientes utilizando principalmente a tecnogia
-                React.js.
-              </p>
-            </div>
-          </div>
         </section> -->
-    <!-- <section class="section-contact" id="section-contact">
-          <h3>Conecte-se</h3>
-          <h3 class="gold">comigo!.</h3>
-          <p class="mobileCP">
-            Estou à diposição para ajudar o seu projeto ou sua empresa.
-          </p>
-          <div class="section-contact-conteiner">
-            <div class="section-contact-item">
-              <img
-                class="section-contact-item-icon"
-                src="icons/mail.png"
-                alt="E-mail icon"
-              />
-              <a class="mobileCA" href="alexandre_dsa@outlook.com"
-                >alexandre_dsa@outlook.com</a
-              >
-            </div>
 
-            <div class="section-contact-item">
-              <img
-                class="section-contact-item-icon"
-                src="icons/contact.png"
-                alt="Phone icon"
-              />
-              <a class="mobileCA" href="(21) 97436-4025">(21) 97436-4025</a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div> -->
 
     <!-- FOOTER SECTIOM -->
     <footer>
@@ -452,7 +268,7 @@
         <div class="footer-title">
 
           <div>
-            <img class="hero-navigation" alt="Assinatura" src="icons/ASS2.png" />
+            <img class="hero-ass" alt="Assinatura" src="/assets/icons/ASS2.png" />
           </div>
 
           <div id="footer-bottom"
@@ -490,25 +306,25 @@
 
               <a href="https://github.com/DAlexandress" target="_blank">
 
-                <img alt="GitHub" class="hero-size-icons-img" src="icons/github.png" />
+                <img alt="GitHub" class="hero-size-icons-img" src="assets/icons/github.png" />
 
               </a>
 
               <a href="https://www.linkedin.com/in/douglas-alexandre-bb6306133/" target="_blank">
 
-                <img alt="linkedin" class="hero-size-icons-img" src="icons/linkedin.png" />
+                <img alt="linkedin" class="hero-size-icons-img" src="/assets/icons/linkedin.png" />
 
               </a>
 
               <a href="https://www.instagram.com/dalexandress/" target="_blank">
 
-                <img alt="Instagram" class="hero-size-icons-img" src="icons/insta.png" />
+                <img alt="Instagram" class="hero-size-icons-img" src="assets/icons/insta.png" />
 
               </a>
 
               <a href="https://www.instagram.com/dalexandress/" target="_blank">
 
-                <img alt="Youtube" class="hero-size-icons-img" src="icons/youtube.png" />
+                <img alt="Youtube" class="hero-size-icons-img" src="assets/icons/youtube.png" />
 
               </a>
 
@@ -522,8 +338,8 @@
 
     </footer>
 
-    <script src="index.js"></script>
-    <script src="stories.js"></script>
+    <script src="/JS/index.js"></script>
+    <script src="/JS/stories.js"></script>
 
 </body>
 
