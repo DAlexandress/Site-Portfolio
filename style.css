@@ -35,6 +35,7 @@ p.slogan {
   font-size: 22px;
   font-family: "Condiment", cursive;
   font-weight: 400;
+  margin: 6px;
 }
 
 p.card {
@@ -125,17 +126,7 @@ button {
   background-color: #ffffff;
 }
 
-/* .section-hero {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  margin-bottom: 20%;
-} */
-
-.barra-navegacao {
+.header-container {
   display: flex;
   width: 95%;
   height: 72px;
@@ -144,7 +135,13 @@ button {
   justify-content: space-between;
 }
 
-.titulo-navegacao {
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.title-info {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -234,17 +231,19 @@ button {
 }
 .feed-post.active {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .feed-post-content {
   background: rgb(24, 21, 0);
   border-radius: 15px;
   padding: 20px;
+  margin: 25px;
   max-width: 800px;
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   animation: slideLeft 1.3s ease;
-  margin-left: 30%;
 }
 
 @keyframes slideLeft {
@@ -270,6 +269,8 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 60px;
+  height: 60px;
 }
 
 .hero-feed-item span {

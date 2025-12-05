@@ -2,9 +2,12 @@
 <html>
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Douglas Alexandre</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
@@ -13,102 +16,158 @@
   <link href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mobile.css" />
+
 </head>
 
 <body>
+
   <div class="root-container">
-    <div class="content-container">
+
+    <!-- -------------- HEADER SECTION ---------------- -->
+    <header class="content-container">
+
       <div class="hero-size-icons-sigla">
         <img class="hero-size-icons-sigla" src="sigla.png" alt="Logo Name" />
       </div>
-      <nav class="barra-navegacao">
-        <h2 class="titulo-navegacao">Douglas Alexandre <p class="front">/ Desenvolvedor Front-End</p>
-        </h2>
-        <span>
-          <p class="slogan">Codificando ideias. <br /> o Café frio e Git-Push.</p>
-        </span>
-      </nav>
-      <section class="section-hero">
 
-        <!-- <button onclick="onClickScrollTo('section-contact')">
-              CONTATO
-            </button> -->
-    </div>
+      <div class="header-container">
 
+        <div class="title-block">
+
+          <h2 class="title-info">Douglas Alexandre</h2>
+          <p class="front">/ Desenvolvedor Front-End</p>
+
+        </div>
+
+        <p class="slogan">Codificando ideias. <br /> o Café frio, Mas Git-Push.</p>
+
+      </div>
+
+    </header>
+
+    <!-- -------------- HERO SECTION --------------- -->
     <div class="hero-info">
       <div class="">
+
         <div class="hero-profile">
+
           <img class="hero-info-image" src="perfil3.png" alt="Perfil DAlexandre" />
 
           <div class="hero-feed">
+
             <div class="hero-feed-item">
+
               <a>
                 <img alt="like" class="hero-size-icons-img" src="icons/heartThin.png" />
               </a>
+
               <span>Amei</span>
+
             </div>
 
             <div class="hero-feed-item">
+
               <a>
                 <img alt="Comment" class="hero-size-icons-img" src="icons/comment.png" />
               </a>
+
               <span>Comentar</span>
+
             </div>
+
             <div class="hero-feed-item">
+
               <a id="btn-mais">
                 <img alt="Menu" class="hero-size-icons-img" src="icons/menu.png" />
               </a>
+
               <span>Mais</span>
+
             </div>
+
           </div>
+
         </div>
       </div>
 
+      <!-- ------------ FEED POST-SECTION ------------- -->
       <div id="feed-post" class="feed-post">
         <div class="mobile-info-text-container">
+
           <div class="feed-post-content">
+
             <div class="init-feed">
+
               <a>
                 <img alt="Back" class="hero-size-icons-feed" src="icons/back.png" />
               </a>
+
               <h1 class="hero-info-title">
                 dalexan_dress@outlook.com</h1>
+
               <a>
                 <img alt="Reticen" class="hero-size-icons-feed" src="icons/reticen.png" />
               </a>
+
             </div>
+
             <hr class="line" />
+
+            <!-- ---------- HIGHLIGHTS SECTION --------- -->
             <div class="highlights">
+
               <div class="highlight" onclick="openStory(0)">
+
                 <img alt="Story1" src="logo.png" />
                 <p>Lenhero</p>
+
               </div>
+
               <div class="highlight" onclick="openStory(1)">
+
                 <img alt="Story2" src="Wallat.jpg" />
                 <p>WalletApp</p>
+
               </div>
+
               <div class="highlight" onclick="openStory(2)">
+
                 <img alt="Story3" src="MarkList.png" />
                 <p>MarkList</p>
+
               </div>
+
+              <!-- ----------- STORY MODAL -------------- -->
               <div id="storyModal" class="story-modal">
+
                 <div class="story-content">
+
                   <img id="storyImage" class="story-media" />
                   <video id="storyVideo" class="story-media" controls></video>
+
                   <a id="storyLink" class="story-link" target="_blank">Visitar Projeto</a>
+
                 </div>
+
               </div>
+
             </div>
+
+            <!-- ---------- HERO FEED BIOS ------------- -->
             <div class="feed-bios">
+
               <a class="nav-feed">
                 <img alt="Profile" class="hero-size-icons-img" src="/icons/profile.png" />
               </a>
+
               <a class="nav-feed">
                 <img alt="Skill" class="hero-size-icons-img" src="/icons/skill.png" />
               </a>
+
               <a class="nav-feed">
                 <img alt="Config" class="hero-size-icons-img" src="/icons/config.png" />
               </a>
+
             </div>
             <p class="hero-info-subtitle">
               Desenvolvedor front-end desde 2023. Tenho experiência com HTML,
@@ -119,31 +178,33 @@
             <button class="mobile-styling-button" onClick="redirectToWhatsApp()">
               ENTRAR EM CONTATO
             </button>
-            <div class="hero-info-icons-container">
-              <a onclick="onClickLink('https://github.com/DAlexandress')">
-                <img alt="GitHub" class="hero-size-icons-img" src="icons/gitHUb.png" />
-              </a>
-              <a onclick="onClickLink('https://www.linkedin.com/in/douglas-alexandre-bb6306133/')">
-                <img alt="linkedin" class="hero-size-icons-img" src="icons/linkedin.png" />
-              </a>
-              <a onclick="onClickLink('https://www.instagram.com/dalexandress/')">
-                <img alt="Instagram" class="hero-size-icons-img" src="icons/insta.png" />
-              </a>
-            </div>
+
           </div>
         </div>
       </div>
+
+      <!-- ---- BOH SECTION ---------------------------- -->
       <div id="boh-container">
-        <img src="Boh.png" id="boh">
+
+        <img src="./assets/images/Boh/BohHome.png" id="boh">
+
         <div id="boh-holograma" class="boh-holo">
+
           <p class="boh-holo-text">Opa, eu sou o Bôh! Vou te mostrar tudo por aqui..</p>
+
           <div class="boh-holo-feixe">
+
             <p class="boh-holo-text">Heeey! Tem coisas legais no meu feed! Que tal explorar?.</p>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
-    </section>
+
+
     <!-- <section class="section-abilities" id="section-abilities">
           <h3>Habilidades que</h3>
           <h3 class="gold">domino.</h3>
@@ -383,6 +444,8 @@
         </section>
       </div>
     </div> -->
+
+    <!-- FOOTER SECTIOM -->
     <footer>
       <div class="footer-content">
 
@@ -393,12 +456,16 @@
           </div>
 
           <div id="footer-bottom"
-            style="font-weight: 600; font-family:'Times New Roman', Times, serif; font-size: 18px;"></div>
+            style="font-weight: 600; font-family:'Times New Roman', Times, serif; font-size: 18px;">
+          </div>
 
         </div>
 
+        <!-- FOOTER MIDIA SECTION-->
         <div class="footer-midia">
+
           <div class="content-contact">
+
             <span>Telefone</span>
             <p>
               (21) 97436-4025
@@ -407,6 +474,7 @@
           </div>
 
           <div class="content-contact">
+
             <span>E-mail</span>
             <p>
               dalexan_dress@outlook.com
@@ -415,6 +483,7 @@
           </div>
 
           <div>
+
             <span> Redes Sociais</span>
 
             <div class="footer-social-icons-container">
@@ -422,25 +491,40 @@
               <a href="https://github.com/DAlexandress" target="_blank">
 
                 <img alt="GitHub" class="hero-size-icons-img" src="icons/github.png" />
+
               </a>
+
               <a href="https://www.linkedin.com/in/douglas-alexandre-bb6306133/" target="_blank">
+
                 <img alt="linkedin" class="hero-size-icons-img" src="icons/linkedin.png" />
+
               </a>
+
               <a href="https://www.instagram.com/dalexandress/" target="_blank">
+
                 <img alt="Instagram" class="hero-size-icons-img" src="icons/insta.png" />
+
               </a>
+
               <a href="https://www.instagram.com/dalexandress/" target="_blank">
+
                 <img alt="Youtube" class="hero-size-icons-img" src="icons/youtube.png" />
+
               </a>
+
             </div>
+
           </div>
 
         </div>
 
       </div>
+
     </footer>
+
     <script src="index.js"></script>
     <script src="stories.js"></script>
+
 </body>
 
 </html>
