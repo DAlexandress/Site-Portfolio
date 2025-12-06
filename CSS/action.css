@@ -131,3 +131,18 @@
     transform: translate(-80px, -20px) scale(1.8);
   }
 }
+
+@keyframes bohSurgindo {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}

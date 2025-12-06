@@ -7,9 +7,14 @@ function onClickScrollTo(id) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const boh = document.getElementById("boh-container");
+  const boh2 = document.getElementById("boh2-container");
+  const boh3 = document.getElementById("boh3-container");
   const bohHolo = document.getElementById("boh-holograma");
   const btnMais = document.getElementById("btn-mais");
   const feedPost = document.getElementById("feed-post");
+  const btnAmei = document.getElementById("btn-amei");
+  const hoverLike = document.getElementById("hover-like");
+  const confetti = document.getElementById("confetti");
 
   btnMais.addEventListener("click", () => {
     feedPost.classList.toggle("active");
@@ -17,7 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Boh acelera + holograma some
     boh.classList.add("boh-hide");
     bohHolo.classList.add("boh-hide");
+
+    BohToFeed();
   });
+
+  function BohToFeed() {
+    boh3.style.display = "block";
+  }
 
   // fechar o feed clicando no fundo
   feedPost.addEventListener("click", (e) => {
@@ -25,8 +36,66 @@ document.addEventListener("DOMContentLoaded", () => {
       feedPost.classList.remove("active");
       boh.classList.remove("boh-hide");
       bohHolo.classList.remove("boh-hide");
+      boh3.style.display = "none";
     }
   });
+
+  btnAmei.addEventListener("click", () => {
+    btnAmei.classList.toggle("wakeup");
+  });
+
+  let checkedLike = false;
+
+  hoverLike.addEventListener("click", () => {
+    checkedLike = !checkedLike;
+
+    hoverLike.src = checkedLike
+      ? "/assets/icons/heartSolid.png"
+      : "/assets/icons/heartThin.png";
+
+    if (checkedLike) {
+      startBohCelebrate();
+    }
+  });
+
+  function startBohCelebrate() {
+    boh.style.display = "none";
+    bohHolo.style.display = "none";
+
+    boh2.style.display = "block";
+
+    playConfetti();
+
+    setTimeout(() => {
+      boh.style.display = "block";
+      bohHolo.style.display = "block";
+      boh2.style.display = "none";
+      confetti.style.display = "none";
+    }, 2000);
+  }
+
+  let confettiAnim = null;
+
+  function playConfetti() {
+    const container = document.getElementById("confetti");
+
+    if (confettiAnim) {
+      confettiAnim.destroy();
+    }
+
+    container.style.display = "block";
+
+    confettiAnim = lottie.loadAnimation({
+      container,
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      path: "/Confetti.json",
+    });
+    setTimeout(() => {
+      container.style.display = "none";
+    }, 2000);
+  }
 });
 
 function onClickLink(url) {

@@ -208,6 +208,16 @@ button {
   animation: bohFlutuar 3s ease-in-out infinite;
 }
 
+#boh2 {
+  width: 200px;
+  animation: bohFlutuar 3s ease-in-out infinite;
+}
+
+#boh3 {
+  width: 140px;
+  animation: bohFlutuar 3s ease-in-out infinite;
+}
+
 /* HOLOGRAMA ========================= */
 .boh-holo {
   display: flex;

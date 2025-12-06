@@ -22,6 +22,7 @@ let currentIndex = 0;
 function openStory(index) {
   currentProject = projects[index];
   currentIndex = 0;
+  document.getElementById("boh3-container").style.display = "none";
   document.getElementById("storyModal").style.display = "flex";
   playNext();
 }
