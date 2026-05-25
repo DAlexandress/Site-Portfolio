@@ -1,17 +1,23 @@
 const projects = [
   {
     images: [
-      "img1-projeto1.png",
-      "img2-projeto1.png",
+      "/assets/images/lenhero/Lenhero.png",
+      "/assets/images/lenhero/Status.png",
+      "/assets/images/lenhero/cssStatus.png",
       "organizacao-codigo1.png",
       "organizacão-codigo2.png",
     ],
-    video: "demo-projeto1.mp4",
+    video: "/assets/videos/Lenhero SmokeHouse.mp4",
     link: "https://meuprojeto1.com",
   },
   {
-    images: ["img1-projeto2.png", "img2-projeto2.png"],
+    images: ["/assets/images/Wallat.jpg", "img2-projeto2.png"],
     video: "demo-projeto2.mp4",
+    link: "https://meuprojeto2.com",
+  },
+  {
+    images: ["/assets/images/MarkList.png", "img3-projeto3.png"],
+    video: "demo-projeto3.mp4",
     link: "https://meuprojeto2.com",
   },
 ];

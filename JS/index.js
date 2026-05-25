@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btnMais.addEventListener("click", () => {
     feedPost.classList.toggle("active");
-
+    if (feedPost.classList.contains("active")) {
+      document.body.classList.add("scroll-block");
+    }
     // Boh acelera + holograma some
     boh.classList.add("boh-hide");
     bohHolo.classList.add("boh-hide");
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   feedPost.addEventListener("click", (e) => {
     if (e.target === feedPost) {
       feedPost.classList.remove("active");
+      document.body.classList.remove("scroll-block");
       boh.classList.remove("boh-hide");
       bohHolo.classList.remove("boh-hide");
       boh3.style.display = "none";

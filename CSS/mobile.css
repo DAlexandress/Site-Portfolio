@@ -14,9 +14,6 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-  .mobile-styling-button {
-    height: 130px;
-  }
 
   .content-container {
     width: 96vw;
@@ -107,7 +104,9 @@
     width: 80vw;
     height: auto;
     background: radial-gradient(circle, #ffd70033, transparent) border-box;
-    box-shadow: 0 0 8px 10px #ffd70045, 0 0 12px 10px #ffd70066,
+    box-shadow:
+      0 0 8px 10px #ffd70045,
+      0 0 12px 10px #ffd70066,
       0 0 45px 15px #ffd70033;
     margin-top: 3%;
   }
@@ -129,7 +128,9 @@
     width: 80vw;
     height: auto;
     background: radial-gradient(circle, #ffd70033, transparent) border-box;
-    box-shadow: 0 0 8px 10px #ffd70045, 0 0 12px 10px #ffd70066,
+    box-shadow:
+      0 0 8px 10px #ffd70045,
+      0 0 12px 10px #ffd70066,
       0 0 45px 15px #ffd70033;
   }
   .section-portifolio-img {

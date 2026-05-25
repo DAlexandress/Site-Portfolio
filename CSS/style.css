@@ -1,12 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(1000deg, #026583, #000607);
+  background: linear-gradient(165deg, #026583, #001e24, #049bc9);
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-size: 200% 200%;
+  animation: bgMove 8s ease infinite;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scroll-block {
+  overflow-y: hidden;
 }
 
 h1 {
@@ -128,6 +150,7 @@ button {
   display: flex;
   width: 300px;
   height: auto;
+  padding-left: 16px;
 }
 
 .hero-info-title {
@@ -204,7 +227,7 @@ button {
 
 /* ROBÔ ============================= */
 #boh {
-  width: 150px;
+  width: 200px;
   animation: bohFlutuar 3s ease-in-out infinite;
 }
 
@@ -220,8 +243,10 @@ button {
 
 /* HOLOGRAMA ========================= */
 .boh-holo {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
   left: -50%;
   bottom: 180px;
@@ -230,10 +255,11 @@ button {
   opacity: 0;
   animation: bohHoloAparecer 1.2s ease-out forwards;
   animation-delay: 1.6s; /* só aparece quando Boh para */
+  pointer-events: none;
 }
 
 /* Feixe do holograma */
-.boh-holo-feixe {
+.boh-holo-charge {
   width: 0px;
   height: 60px;
   background: linear-gradient(to top, rgba(132, 214, 236, 0.932), transparent);
@@ -256,6 +282,39 @@ button {
   margin-top: 8px;
 
   animation: bohTextoFlutuar 3s ease-in-out infinite;
+}
+
+/* Quando o BOH vai sumir */
+#boh-container.boh-hide {
+  animation: bohAccelerate 0.4s cubic-bezier(0.3, 0, 1, 1) forwards;
+}
+
+/* Holograma desaparecendo suavemente */
+.boh-holo.boh-hide {
+  opacity: 0;
+  animation: none;
+}
+
+/* Pó cósmico */
+#boh-container.boh-hide::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: -100px;
+  bottom: 0px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9),
+    rgba(105, 20, 190, 0.3),
+    rgba(100, 50, 200, 0)
+  );
+
+  opacity: 0;
+  pointer-events: none;
+  animation: cosmicDust 1s ease-out forwards;
+  filter: blur(0px);
 }
 
 /* Quando o BOH vai sumir */
