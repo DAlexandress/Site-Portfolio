@@ -15,11 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnAmei = document.getElementById("btn-amei");
   const hoverLike = document.getElementById("hover-like");
   const confetti = document.getElementById("confetti");
+  const overlay = document.getElementById("overlay");
 
   btnMais.addEventListener("click", () => {
     feedPost.classList.toggle("active");
     if (feedPost.classList.contains("active")) {
       document.body.classList.add("scroll-block");
+      overlay.classList.add("active");
     }
     // Boh acelera + holograma some
     boh.classList.add("boh-hide");
@@ -40,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       boh.classList.remove("boh-hide");
       bohHolo.classList.remove("boh-hide");
       boh3.style.display = "none";
+      overlay.classList.remove("active");
     }
   });
 
